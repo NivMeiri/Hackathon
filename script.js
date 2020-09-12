@@ -83,5 +83,5 @@ if(bool){
   console.log("John has ween with score of : "+average1)
 }
 else{
-console.log("Mike has ween with score of : "+av2)
+console.log("Niv is the best player : "+av2)
 }
