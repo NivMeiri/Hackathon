@@ -9,8 +9,10 @@ dict["BFS"]=[4,"BFS"]
 dict["BEST"]=[4,"BEST"]
 dict["HOFFMAN"]=[9,"HOFFMAN"]
 function showSearch(text){
-  console.log(text)
+  var name =document.getElementById("name")
+  console.log(name.value);
 }
+
 function myfunc(){
     info=prompt(" what meterlias are you searching?")
     let h1=document.createElement("h1")
