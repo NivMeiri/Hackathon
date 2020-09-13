@@ -1,6 +1,6 @@
 .flex-box{
     display:  flex;
-    border: 1px solid black;
+    border: 10px solid yellow;
     padding: 40px;
     flex-wrap: wrap;
     flex-direction: row;
