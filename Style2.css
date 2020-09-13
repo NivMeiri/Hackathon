@@ -1,0 +1,32 @@
+
+  .flex-box{
+    display:  flex;
+    padding: 30px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+  
+  .custom-select select {
+    background-color: orange;
+    color: white;
+    width: 220;
+    height: 45;
+    border-radius: 12px;
+    direction: rtl;
+  }
+
+  .Search{
+      background-color:lightskyblue;
+      color: white;
+      height: 50px;
+      width: 100px;
+      margin-top: 0px;
+      margin-left: 600px;
+
+  }
+
+  .second{
+    background-image: url('picture/hogworts2.jpg');
+  }
+  
