@@ -8,6 +8,9 @@ dict["DFS"]=[4,"https://www.youtube.com/watch?v=iaBEKo5sM7w&ab_channel=GoGATEIIT
 dict["BFS"]=[4,"BFS"]
 dict["BEST"]=[4,"BEST"]
 dict["HOFFMAN"]=[9,"HOFFMAN"]
+function showSearch(text){
+  console.log(text)
+}
 function myfunc(){
     info=prompt(" what meterlias are you searching?")
     let h1=document.createElement("h1")
