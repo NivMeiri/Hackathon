@@ -19,7 +19,7 @@ var pages = [
     document.body.style.backgroundImage = "url('Big_data.jpg')";
   }
 dict["DFS"] = new basicSubject("DFS");
-dict["DFS"].linkArray.push(new basicLink("YouTube","https://www.youtube.com/watch?v=iaBEKo5sM7w&ab_channel=GoGATEIIT",20));
+dict["DFS"].linkArray.push(new basicLink("YouTube","someLink",20));
 dict["DFS"].linkArray.push(new basicLink("Moodle","someLink",13));
 dict["DFS"].linkArray.push(new basicLink("Drive","someLink2",7));
 
@@ -53,9 +53,10 @@ function searchFunc(info2){
     for ( let i =0 ; i< dict[info].linkArray.length ; i++){
       let SourceName=document.createTextNode("Source: "+dict[info].linkArray[i].name+"\n" )
       let SourceUrl=document.createTextNode("Adress: "+dict[info].linkArray[i].url+"\n" )
-      let SourceLike=document.createTextNode(": "+dict[info].linkArray[i].numOfLikes+"likes"+"\n" )
+      let SourceLike=document.createTextNode(": "+dict[info].linkArray[i].numOfLikes+" likes"+"\n" )
       h2.append(SourceName)
       h2.append(SourceUrl)
+      h2.append
       h2.append(SourceLike)
       if(i==1){
       h3.append(SourceName)
@@ -82,6 +83,9 @@ function reset(){
     document.getElementById("searchFunc").remove()
     document.getElementById("myfunc2").remove()
 
+}
+function goto(){
+  
 }
 function like(){
    reset()
