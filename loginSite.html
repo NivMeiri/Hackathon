@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style2.css">
+    <!-- <link rel="stylesheet" href=https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css> -->
+    <title>My file</title>
+</head>
+<body>
+    <style>
+        body{
+            background-image: url('pictures/logo.png');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    </style>
+    <div class="flex-box" style="margin-left: 510px; flex-direction: column;">
+        <h2>STUDENETWORK</h2>
+        <div>
+            <input type="text" id="givenUser" placeholder="Username" ></input>
+        </div>
+        <div>
+            <input type="password" id="givenPass" style="margin-top: 5px;" placeholder="Password"></input>
+        </div>
+        <div>
+            <input type="checkbox" onclick="showPass()">Show password</input>
+        </div>
+        <div>
+            <button type="button" id="loginButton">Login</button> 
+        </div>
+        <style>
+            h2{
+                margin-left: 110px;
+            }
+            input{
+                margin-left: 130px;
+                border-radius: 6px;
+            }
+            button{
+                margin-left: 190px;
+                margin-top: 10px;
+                background-color: orange;
+                border-radius: 12px;
+            }
+        </style>
+    </div>
+    
+</body>
