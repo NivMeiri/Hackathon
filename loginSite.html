@@ -5,8 +5,8 @@
             background-image: url('pictures/logo.png');
             background-repeat: no-repeat;
             background-position: center;
-            background-position-y:190px ;
-            background-color: peachpuff;
+            background-position-y:220px ;
+            background-color: rgb(247, 177, 47);
         }
     </style>
     <meta charset="UTF-8">
@@ -17,19 +17,18 @@
 </head>
 <body>
  
-    <div class="flex-box" style="margin-left: 380px; flex-direction: column;">
-        <h2>STUDENETWORK</h2>
+    <div class="flex-box" style="align-items: center;margin-left: -140px;margin-top: 60px; flex-direction: column;">
         <div>
-            <input type="text" id="givenUser" placeholder="Username" ></input>
+            <input type="text" id="givenUser" placeholder="Username" style="height: 35px; width: 200px"></input>
         </div>
         <div>
-            <input type="password" id="givenPass" style="margin-top: 5px;" placeholder="Password"></input>
+            <input type="password" id="givenPass" style="margin-top: 5px;height: 35px; width: 200px" placeholder="Password"></input>
         </div>
         <div>
             <input type="checkbox" onclick="showPass()">Show password</input>
         </div>
         <div>
-            <button  type="button" id="loginButton" ><a href="second.html" >Login</a></button></div>
+            <button  type="button" id="loginButton" style="height: 28px; width: 100px" ><a href="second.html" >Login</a></button></div>
         </div>
         <style>
             h2{
@@ -42,8 +41,10 @@
             button{
                 margin-left: 190px;
                 margin-top: 10px;
-                background-color: orange;
+                background-color: rgb(243, 243, 105);
                 border-radius: 12px;
+                color: grey;
+                size: 100px;
             }
         </style>
     </div>

@@ -8,12 +8,12 @@
 }
   
   .custom-select select {
-    background-color:rgb(136, 145, 156);
-    color: black;
-    width: 220;
-    height: 45;
+    background-color:lightgoldenrodyellow;
+    color: grey;
+    width: 250px;
+    height: 45px;
     font-size: 25px;
-
+    align-items: center;
     border-radius: 12px;
     direction: rtl;
   }
@@ -38,7 +38,18 @@
     color: blueviolet;
     height: 200px;
     width: 200px;
+  }
 
-
+  .blessHeader{
+    padding: 5px;
+    text-align: center;
+    background:/*rgb(248, 248, 132);*/ rgb(247, 177, 47); 
+    font-size: 30px;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 175px;
+    border-color:rgb(247, 177, 47);/*rgb(248, 248, 132);*/
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif;
   }
 
