@@ -2,47 +2,26 @@
   .flex-box{
     display:  flex;
     padding: 30px;
+    flex-flow: row wrap;
+    align-items: center;
     flex-wrap: wrap;
-    margin-left: 900px;
-    margin-top: 50px;
     flex-direction: row;
-    
     justify-content: space-around;
 }
   
   .custom-select select {
     background-color:lightgoldenrodyellow;
     color: grey;
-    width: 300px;
-    height: 40px;
+    /* width: 300px; */
+    /* height: 40px; */
     font-size: 25px;
     align-items: center;
     border-radius: 12px;
-    
     direction: rtl;
   }
-  
 
-  .custom-select2 select  {
-    background-color:lightgoldenrodyellow;
-    color: grey;
-    width: 250px;
-    height: 45px;
-    font-size: 25px;
-    
-    align-items: center;
-    border-radius: 12px;
-    direction: rtl;
-  }
-  
-  .Search-b {
-    color: blueviolet;
-    height: 200px;
-    width: 200px;
-  }
+
   .blessHeader{
-
-
     padding: 30px;
     text-align: center;
     background: rgb(247, 177, 47);
@@ -53,19 +32,5 @@
     background-position: left;
     background-size: 175px;
     border-color: rgb(247, 177, 47);
-
-
-    /*
-    padding: 60px;
-    text-align: center;
-    background: rgb(247, 177, 47);
-    color: lightyellow;
-    font-size: 30px;
-    background-image: url('pictures/logo.png');
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: 175px;
-    border-color: rgb(247, 177, 47);
-    font-family: Arial, Helvetica, sans-serif;*/
   }
 
