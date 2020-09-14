@@ -26,4 +26,17 @@
     border-color: rgb(247, 177, 47);
   }
 
+  .flex-box-res2 {
+    padding: 60px;
+    text-align: center;
+    background: rgb(247, 177, 47);
+    color: lightyellow;
+    font-size: 30px;
+    background-image: url('pictures/big_d.jpg');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 175px;
+    border-color: rgb(247, 177, 47);
+  }
+
   

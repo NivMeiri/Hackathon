@@ -4,10 +4,10 @@ var pages = [
     'index.html',
     'index2.html',
   ];
-  let basicLink =  function(name , url) {
+  let basicLink =  function(name , url,like) {
     this.name = name;
     this.url = url;
-    this.numOfLikes = 9;
+    this.numOfLikes = like;
     this.comments = [];
   }
   let basicSubject = function(name){
@@ -19,10 +19,11 @@ var pages = [
     document.body.style.backgroundImage = "url('Big_data.jpg')";
   }
 dict["DFS"] = new basicSubject("DFS");
-dict["DFS"].linkArray.push(new basicLink("YouTube","https://www.youtube.com/watch?v=iaBEKo5sM7w&ab_channel=GoGATEIIT"));
-dict["DFS"].linkArray.push(new basicLink("Moodle","someLink"));
-//console.log(dict["DFS"])
-//dict["DFS"]=[4,"https://www.youtube.com/watch?v=iaBEKo5sM7w&ab_channel=GoGATEIIT", "link 2", "link 3"]
+dict["DFS"].linkArray.push(new basicLink("YouTube","https://www.youtube.com/watch?v=iaBEKo5sM7w&ab_channel=GoGATEIIT",20));
+dict["DFS"].linkArray.push(new basicLink("Moodle","someLink",13));
+dict["DFS"].linkArray.push(new basicLink("Drive","someLink2",7));
+
+
 dict["BFS"]=[4,"BFS"]
 dict["BEST"]=[4,"BEST"]
 dict["HOFFMAN"]=[9,"HOFFMAN"]
@@ -33,11 +34,12 @@ function showSearch(text){
 }
 
 function searchFunc(info2){
-    //info=search
-    //document.getElementsByClassName("flex-box").like = false;
     info=info2
     let h1=document.createElement("h1")
     let h2=document.createElement("h2")
+    let h3=document.createElement("h3")
+    let h4=document.createElement("h3")
+
     try {
         if( dict[info]==null) throw "No Value";
       }
@@ -45,20 +47,35 @@ function searchFunc(info2){
         console.log(err)
         document.getElementById("flex-box-res").innerHTML = err.message;
       }
-    let text=document.createTextNode(" you are searching for "+info+", That's what we found: "+dict[info].linkArray[0].url )
-    console.log(typeof(text));
+      h1.setAttribute("id","searchFunc")
+      h2.setAttribute("id","myfunc2")
+    let text=document.createTextNode(" Results for : "+info )
     for ( let i =0 ; i< dict[info].linkArray.length ; i++){
-        console.log(dict[info].linkArray[i].name);
-        console.log(dict[info].linkArray[i].url);
-          // text+=(dict[info].linkArray[i].name + "\n");
-          // text+=(dict[info].linkArray[i].url + "n");
+      let SourceName=document.createTextNode("Source: "+dict[info].linkArray[i].name+"\n" )
+      let SourceUrl=document.createTextNode("Adress: "+dict[info].linkArray[i].url+"\n" )
+      let SourceLike=document.createTextNode(": "+dict[info].linkArray[i].numOfLikes+"likes"+"\n" )
+      h2.append(SourceName)
+      h2.append(SourceUrl)
+      h2.append(SourceLike)
+      if(i==1){
+      h3.append(SourceName)
+      h3.append(SourceUrl)
+      h3.append(SourceLike)
+      }
+      if(i==2){
+        h4.append(SourceName)
+        h4.append(SourceUrl)
+        h4.append(SourceLike)
+        }
     }
-    h1.setAttribute("id","searchFunc")
-    h2.setAttribute("id","myfunc2")
-    h2.append(+dict[info].linkArray[0].numOfLikes +" LIKES ")
+
     h1.appendChild(text)
     document.getElementById("flex-box-res").appendChild(h1)
     document.getElementById("flex-box-res2").appendChild(h2)
+    document.getElementById("flex-box-res4").appendChild(h3)
+    document.getElementById("flex-box-res5").appendChild(h4)
+
+
 
 }
 function reset(){
