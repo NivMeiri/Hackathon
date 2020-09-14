@@ -15,21 +15,32 @@
             <input type="button" value="Search" style="margin-left: 470px; margin-top: 10px;" onclick="showSearch();"></input>
         </form>
     </div>
+
+
     <div>
-        <button class=" btn btn-danger" onclick="like()" > Likes</button>
+        <button class=" btn btn-success" onclick="" style="margin-left: -10px; border-radius: 12px;background-color: orange;">Upload</button>
     </div>
     <div>
-        <button class=" btn btn-success" onclick="" >Upload</button>
-    </div>
-    <div>
-        <button class=" btn btn-secondary" onclick="reset()" >Reset</button>
+        <button class=" btn btn-secondary" onclick="reset()" style="margin-left: -10px; margin-top: 10px;border-radius: 12px;background-color: orange;" >Clear</button>
     </div>
     
 
-    <div class=" flex-box">
-        <div id="flex-box-res"></div>
-        <div id="flex-box-res2"></div>
 
+    <div class=" flex-box" style="flex-direction: row;">
+        <div id="flex-box-res" style="margin-top: 10px;" ></div>
+        <div  id="flex-box-res2"></div> 
+        <div id="flex-box-res3"  style="border-color: white;justify-content: space-around; ">
+            <div style="border-color: white;height: 100px;">
+                <button class=" btn btn-danger" onclick="like()" style=" border-radius: 100px;"> Like</button>
+            </div>
+            <div select class="topnav" style="border-color: white;">
+                <form>
+                    <input type="text" placeholder="Comment.." style="border-radius: 12px; margin-left: 65px; width: 200px;" id="comment"/><br/>
+                    <input type="button" value="Comment" style="margin-left: 120px; margin-top: 10px;" onclick="showSearch();"></input>
+                </form>
+            </div>        
+        </div>
+        
     </div>
 </div>
 
