@@ -1,8 +1,5 @@
 <html lang="en">
 <head>
-    
-  
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Style.css">
@@ -10,56 +7,46 @@
     <title>My file</title>
 </head>
 <body>
-    <style>
-        body{
-            background-image: url('pictures/logo.png');
-            background-repeat: no-repeat;
-            background-position: right;
-            background-position-y:-70px; 
-       
-    
-        }
-    </style>
-
-
     <div class ="container" >
-    <h2>StudentWork-Introduction to Programming:</h2>
+
+    <div class="header">
+        <h1>מאגר המידע</h1>
+    </div>
+
     <div select class="topnav">
         <form>
-            <input type="text" placeholder="Search.." style="border-radius: 12px; margin-left: 400px; width: 200px;" id="Search"/><br/>
-            <input type="button" value="Search" style="margin-left: 470px; margin-top: 10px;" onclick="showSearch();"></input>
+            <input type="text" placeholder="Search.." style="border-radius: 12px;margin-top: 10px; margin-left: 400px; width: 200px;" id="Search"/><br/>
+            <input type="button" value="Search" style="border-collapse: collapse;border-radius: 10px; ;margin-left: 470px; margin-top: 10px; background-color: orange;" onclick="showSearch();"></input>
         </form>
     </div>
 
-
+    
     <div>
-        <button class=" btn btn-success" onclick="" style="margin-left: -10px; border-radius: 12px;background-color: orange;">Upload</button>
+        <button class=" btn btn-success" onclick="" style="margin-left: -100px; border-radius: 12px;background-color: orange;">Upload</button>
     </div>
     <div>
-        <button class=" btn btn-secondary" onclick="reset()" style="margin-left: -10px; margin-top: 10px;border-radius: 12px;background-color: orange;" >Clear</button>
+        <button class=" btn btn-secondary" onclick="reset()" style="margin-left: -100px; margin-top: 10px;border-radius: 12px;background-color: orange;" >Clear</button>
     </div>
     
 
 
-    <div class=" flex-box" style="flex-direction: row;">
+    <div class=" flex-box">
         <div id="flex-box-res" style="margin-top: 10px;" ></div>
         <div  id="flex-box-res2"></div> 
         <div id="flex-box-res3"  style="border-color: white;justify-content: space-around; ">
             <div style="border-color: white;height: 100px;">
                 <button class=" btn btn-danger" onclick="like()" style=" border-radius: 100px;"> Like</button>
             </div>
-            <div style="border-color: white;height: 100px;">
-                <button class=" btn btn-danger" onclick="Goto()" style=" border-radius: 100px;"> Link</button>
-            </div>
-            <div select class="topnav" style="border-color: white;">
+            <div select class="topnav" style="border-color: white;;">
                 <form>
                     <input type="text" placeholder="Comment.." style="border-radius: 12px; margin-left: 65px; width: 200px;" id="comment"/><br/>
-                    <input type="button" value="Comment" style="margin-left: 120px; margin-top: 10px;" onclick="showSearch();"></input>
+                    <input type="button" value="Comment" style="border-color: transparent;color: white;border-radius: 100px;background-color: rgb(233, 70, 70) ;margin-left: 120px; margin-top: 10px;" onclick="showSearch();"></input>
                 </form>
             </div>        
         </div>
         
     </div>
+
 </div>
 
     <script src="script.js"

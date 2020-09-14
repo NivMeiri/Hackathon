@@ -12,3 +12,15 @@
     padding: 30px;
     border: 1px solid black;
 }
+
+.header {
+    padding: 60px;
+    text-align: center;
+    background: rgb(247, 177, 47);
+    color: lightyellow;
+    font-size: 30px;
+    background-image: url('pictures/logo.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 175px;
+  }
