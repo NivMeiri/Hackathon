@@ -1,5 +1,8 @@
 <html lang="en">
 <head>
+    
+  
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Style.css">
@@ -7,8 +10,20 @@
     <title>My file</title>
 </head>
 <body>
+    <style>
+        body{
+            background-image: url('pictures/logo.png');
+            background-repeat: no-repeat;
+            background-position: right;
+            background-position-y:-70px; 
+       
+    
+        }
+    </style>
+
+
     <div class ="container" >
-    <h2>StudentWork-Intruduction:</h2>
+    <h2>StudentWork-Introduction to Programming:</h2>
     <div select class="topnav">
         <form>
             <input type="text" placeholder="Search.." style="border-radius: 12px; margin-left: 400px; width: 200px;" id="Search"/><br/>
@@ -32,6 +47,9 @@
         <div id="flex-box-res3"  style="border-color: white;justify-content: space-around; ">
             <div style="border-color: white;height: 100px;">
                 <button class=" btn btn-danger" onclick="like()" style=" border-radius: 100px;"> Like</button>
+            </div>
+            <div style="border-color: white;height: 100px;">
+                <button class=" btn btn-danger" onclick="Goto()" style=" border-radius: 100px;"> Link</button>
             </div>
             <div select class="topnav" style="border-color: white;">
                 <form>

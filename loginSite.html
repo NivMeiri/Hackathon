@@ -1,5 +1,14 @@
 <html lang="en">
 <head>
+    <style>
+        body{
+            background-image: url('pictures/logo.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-position-y:190px ;
+            background-color: peachpuff;
+        }
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Style2.css">
@@ -7,14 +16,8 @@
     <title>My file</title>
 </head>
 <body>
-    <style>
-        body{
-            background-image: url('pictures/logo.png');
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-    </style>
-    <div class="flex-box" style="margin-left: 510px; flex-direction: column;">
+ 
+    <div class="flex-box" style="margin-left: 380px; flex-direction: column;">
         <h2>STUDENETWORK</h2>
         <div>
             <input type="text" id="givenUser" placeholder="Username" ></input>
@@ -26,7 +29,7 @@
             <input type="checkbox" onclick="showPass()">Show password</input>
         </div>
         <div>
-            <button type="button" id="loginButton">Login</button> 
+            <button  type="button" id="loginButton" ><a href="second.html" >Login</a></button></div>
         </div>
         <style>
             h2{
