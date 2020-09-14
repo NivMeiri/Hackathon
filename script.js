@@ -4,18 +4,16 @@ var pages = [
     'index.html',
     'index2.html',
   ];
-
   let basicLink =  function(name , url) {
     this.name = name;
     this.url = url;
-    this.numOfLikes = 0;
+    this.numOfLikes = 9;
     this.comments = [];
   }
   let basicSubject = function(name){
     this.name= name;
     this.linkArray = [];
   }
-
   function myFunction() {
     document.body.style.backgroundColor = "#f3f3f3";
     document.body.style.backgroundImage = "url('Big_data.jpg')";
@@ -34,8 +32,10 @@ function showSearch(text){
   searchFunc(name.value)
 }
 
-function searchFunc(info){
+function searchFunc(info2){
     //info=search
+    //document.getElementsByClassName("flex-box").like = false;
+    info=info2
     let h1=document.createElement("h1")
     let h2=document.createElement("h2")
     try {
@@ -45,7 +45,7 @@ function searchFunc(info){
         console.log(err)
         document.getElementById("flex-box-res").innerHTML = err.message;
       }
-    let text=document.createTextNode(" you are searching for "+info+", That's what we found: "/*+dict[info][1]*/ )
+    let text=document.createTextNode(" you are searching for "+info+", That's what we found: "+dict[info].linkArray[0].url )
     console.log(typeof(text));
     for ( let i =0 ; i< dict[info].linkArray.length ; i++){
         console.log(dict[info].linkArray[i].name);
@@ -55,21 +55,21 @@ function searchFunc(info){
     }
     h1.setAttribute("id","searchFunc")
     h2.setAttribute("id","myfunc2")
-    h2.append(+dict[info][0] +" LIKES ")
+    h2.append(+dict[info].linkArray[0].numOfLikes +" LIKES ")
     h1.appendChild(text)
     document.getElementById("flex-box-res").appendChild(h1)
     document.getElementById("flex-box-res2").appendChild(h2)
 
 }
 function reset(){
-    document.getElementById("myfunc").remove()
+    document.getElementById("searchFunc").remove()
     document.getElementById("myfunc2").remove()
 
 }
 function like(){
-    reset()
-    dict[info][0]+=1
-    Clean_Show()
+   reset()
+    dict[info].linkArray[0].numOfLikes+=1
+   Clean_Show()
 
 }
 function Clean_Show(){
@@ -82,10 +82,10 @@ function Clean_Show(){
       console.log(err)
       document.getElementById("flex-box-res").innerHTML = err.message;
     }
-  let text=document.createTextNode(" you are searching for "+info+", That what we found: THE ADDRESS: "+dict[info][1]   )
+  let text=document.createTextNode(" you are searching for "+info+", That what we found: THE ADDRESS: "+dict[info].linkArray[0].url   )
   h1.setAttribute("id","myfunc")
   h2.setAttribute("id","myfunc2")
-  h2.append(+dict[info][0] +" LIKES ")
+  h2.append(+dict[info].linkArray[0].numOfLikes +" LIKES ")
   h1.appendChild(text)
   document.getElementById("flex-box-res").appendChild(h1)
   document.getElementById("flex-box-res2").appendChild(h2)

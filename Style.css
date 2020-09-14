@@ -1,11 +1,12 @@
-.flex-box{
+/*.flex-box{
     display:  flex;
-    border: 10px solid yellow;
+    border: 3px solid black;
     padding: 40px;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-around;
 }
+*/
 .flex-box div{
     display: flex;
     padding: 30px;
