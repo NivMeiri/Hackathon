@@ -16,17 +16,19 @@
     direction: rtl;
   }
 
-  .Search{
-      background-color:lightskyblue;
+  .custom-select2  {
       color: white;
       height: 50px;
-      width: 100px;
+      width: 200px;
       margin-top: 0px;
-      margin-left: 600px;
+      margin-left: 920px;
+
+  }
+  .Search-b {
+    color: blueviolet;
+    height: 50px;
+    width: 50px;
+
 
   }
 
-  .second{
-    background-image: url('picture/hogworts2.jpg');
-  }
-  
