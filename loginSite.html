@@ -4,31 +4,29 @@
         body{
             background-image: url('pictures/logo.png');
             background-repeat: no-repeat;
-            background-position: center;
-            background-position-y:220px ;
+            background-position: top;
+            background-size: 200px;
+            background-position-y:50px ;
             background-color: rgb(247, 177, 47);
         }
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Style2.css">
-    <!-- <link rel="stylesheet" href=https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css> -->
     <title>My file</title>
 </head>
 <body>
  
-    <div class="flex-box" style="align-items: center;margin-left: -140px;margin-top: 60px; flex-direction: column;">
+    <div class="flex-box" style="align-items: center;margin-left: -140px;margin-top: 250px; flex-direction: column;">
         <div>
-            <input type="text" id="givenUser" placeholder="Username" style="height: 35px; width: 200px"></input>
+            <input type="text" id="givenUser" placeholder="שם משתמש" style="height: 35px;direction:rtl; width: 200px"></input>
         </div>
         <div>
-            <input type="password" id="givenPass" style="margin-top: 5px;height: 35px; width: 200px" placeholder="Password"></input>
+            <input type="password" id="givenPass" style="margin-top: 5px;direction:rtl; height: 35px; width: 200px" placeholder="סיסמה"></input>
         </div>
+       
         <div>
-            <input type="checkbox" onclick="showPass()">Show password</input>
-        </div>
-        <div>
-            <button  type="button" id="loginButton" style="height: 28px; width: 100px" ><a href="second.html" >Login</a></button></div>
+            <button  type="button" id="loginButton" style="height: 28px; width: 100px" ><a href="second.html" >התחבר</a></button></div>
         </div>
         <style>
             h2{

@@ -4,6 +4,7 @@
     padding: 30px;
     flex-wrap: wrap;
     flex-direction: row;
+    margin-left: 800px;
     justify-content: space-around;
 }
   
@@ -17,23 +18,19 @@
     border-radius: 12px;
     direction: rtl;
   }
+  
 
-  .custom-select2  {
-      color: white;
-      height: 50px;
-      width: 200px;
-      margin-top: 0px;
-      margin-left: 920px;
-
+  .custom-select2 select  {
+    background-color:lightgoldenrodyellow;
+    color: grey;
+    width: 250px;
+    height: 45px;
+    font-size: 25px;
+    align-items: center;
+    border-radius: 12px;
+    direction: rtl;
   }
-  .custom-select2  select{
-    color: white;
-    width: 220;
-    height: 45;
-    margin-top: 0px;
-    margin-left: 920px;
-
-}
+  
   .Search-b {
     color: blueviolet;
     height: 200px;
