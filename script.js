@@ -18,7 +18,10 @@ var pages = [
     this.linkArray = [];
   }
 
-
+  function myFunction() {
+    document.body.style.backgroundColor = "#f3f3f3";
+    document.body.style.backgroundImage = "url('Big_data.jpg')";
+  }
 
 dict["DFS"] = new basicSubject("DFS");
 dict["DFS"].linkArray.push(new basicLink("YouTube","https://www.youtube.com/watch?v=iaBEKo5sM7w&ab_channel=GoGATEIIT"));
