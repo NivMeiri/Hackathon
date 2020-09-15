@@ -22,18 +22,22 @@ dict["DFS"] = new basicSubject("DFS");
 dict["DFS"].linkArray.push(new basicLink("YouTube","Depth First Search Algorithm",20));
 dict["DFS"].linkArray.push(new basicLink("Moodle Ben Gurion","Lecture No. 3 - DFS",13));
 dict["DFS"].linkArray.push(new basicLink("Google-Drive","Algorithms summary",7));
-
-
 dict["BFS"]=[4,"BFS"]
 dict["BEST"]=[4,"BEST"]
 dict["HOFFMAN"]=[9,"HOFFMAN"]
 function showSearch(){
   var name =document.getElementById("Search")
   console.log(name.value);
+  //var oNewWindow = window.open("index.html", "mywindow");
+ // oNewWindow.onload = function(){oNewWindow.window.searchFunc(name.value);};
+  
+
   searchFunc(name.value)
 }
 
 function searchFunc(info2){
+
+
     info=info2
     let h1=document.createElement("h1")
     let h2=document.createElement("h2")
@@ -49,14 +53,13 @@ function searchFunc(info2){
       }
       h1.setAttribute("id","searchFunc")
       h2.setAttribute("id","myfunc2")
-    let text=document.createTextNode( info+" :תוצאות עבור")
-    for ( let i =0 ; i< dict[info].linkArray.length ; i++){
+      let text=document.createTextNode( info+" :תוצאות עבור")
+      for ( let i =0 ; i< dict[info].linkArray.length ; i++){
       let SourceName=document.createTextNode("    "+dict[info].linkArray[i].name+": " )
       let SourceUrl=document.createTextNode(dict[info].linkArray[i].url+"\n" )
       let SourceLike=document.createTextNode(" | "+dict[info].linkArray[i].numOfLikes+" likes" )
       h2.append(SourceName)
       h2.append(SourceUrl)
-      h2.append
       h2.append(SourceLike)
       h2.style.fontSize="25"
       if(i==1){
@@ -93,29 +96,21 @@ function goto(){
   
 }
 function like(){
-   reset()
-    dict[info].linkArray[0].numOfLikes+=1
-   Clean_Show()
+  reset()
 
+Clean_Show()
 }
 function Clean_Show(){
-  let h1=document.createElement("h1")
   let h2=document.createElement("h2")
-  try {
-      if( dict[info]==null) throw "No Value";
-    }
-    catch(err) {
-      console.log(err)
-      document.getElementById("flex-box-res").innerHTML = err.message;
-    }
-  let text=document.createTextNode( info+" :תוצאות עבור")
-  h1.setAttribute("id","myfunc")
-  h2.setAttribute("id","myfunc2")
-  h2.append(+dict[info].linkArray[0].numOfLikes +" LIKES ") /*should be adding 1 like to existing content*/
-  h1.appendChild(text)
-  h1.style.marginLeft="600"
-  document.getElementById("flex-box-res").appendChild(h1)
-  document.getElementById("flex-box-res2").appendChild(h2)
+  info-"DFS"
+   let SourceName=document.createTextNode("    "+dict[info].linkArray[0].name+": " )
+   let SourceUrl=document.createTextNode(dict[info].linkArray[0].url+"\n" )
+   let SourceLike=document.createTextNode(" | "+(dict[info].linkArray[0].numOfLikes+1)+" likes" )
+   h2.append(SourceName)
+   h2.append(SourceUrl)
+   h2.append(SourceLike)
+   h2.style.fontSize="25" 
+   document.getElementById("flex-box-res2").appendChild(h2)
 
 }
 function Addtodict(){
