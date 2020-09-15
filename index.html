@@ -14,58 +14,70 @@
         <p>שלום, ניב מאירי</p>
 
     </div>
-    <div class ="container" >
-        <div select class="topnav">
-            <form>
-                <input type="text" placeholder="Search.." style="border-radius: 12px;margin-top: 10px; margin-left: 400px; width: 200px;" id="Search"/><br/>
-                <input type="button" value="Search" style="border-collapse: collapse;border-radius: 10px; ;margin-left: 470px; margin-top: 10px; border-radius: 12px; background-color: orange; color: white;" onclick="showSearch();"></input>
-            </form>
-        </div>
+    <!-- <div class ="container" style="width: 5000px;"> -->
+    <div select class="topnav">
+        <form>
+            <input type="text" placeholder="Search.." style="border-radius: 12px;margin-top: 10px; margin-left: 650px; width: 200px;" id="Search"/><br/>
+            <input type="button" value="Search" style="border-collapse: collapse;border-radius: 10px; ;margin-left: 718px; margin-top: 10px; border-radius: 12px; background-color: orange; color: white;" onclick="showSearch();"></input>
+        </form>
+    </div>
 
         
-        <div class=" flex-box">
-            <div id="flex-box-res" style="margin-top: 10px;" >
+        <div class=" flex-box" style="width: 1100px; margin-left: 200px;">
+            <div id="flex-box-res" style="margin-top: 10px; border-top-color: transparent; border-right-color: transparent; border-left-color: transparent; border-bottom-color: grey; margin-top: 40px;" >
                     <button class=" btn btn-success"  style="margin-left: 10px; border-radius: 30px;background-color: orange; "><a href="https://www.youtube.com/results?search_query=dfs"></a>הוסף קובץ</button>
             </div>
-            <div class="pic">
-            <div id="flex-box-res2" style="margin-top: 10px; border-color: transparent;" >
-                <button onclick="like()" style="border-color: transparent;width: 40px ;border-radius: 30px; background-image: url('pictures/orangeLike.png');background-repeat: no-repeat;background-size: 42px; background-position: center;"></button>
-                <button class=" btn btn-success" onclick="like()" style="margin-right: 30px;margin-left: 5px;color: transparent;border-color: transparent;width: 38px;border-radius: 100px;background-image: url('pictures/linkpic.png');background-position: center;background-repeat: no-repeat;background-size: 25px;">G</button>
 
+            <!-- first result with like and link -->
+            <div class="pic" style="border-top-color: transparent; border-right-color: transparent; border-left-color: transparent; border-bottom-color: grey; margin-top: 40px;">
+                <div id="flex-box-res2" style="margin-top: 10px; border-color: transparent;" >
+                    <button onclick="like()" style="border-color: transparent;width: 40px ;border-radius: 30px; background-image: url('pictures/pngguru.com.png');background-repeat: no-repeat;background-size: 50px; background-position: center;"></button>
+                    <button class=" btn btn-success" onclick="like()" style="margin-right: 30px;margin-left: 5px;color: transparent;border-color: transparent;width: 38px;border-radius: 100px;background-image: url('pictures/linkpic.png');background-position: center;background-repeat: no-repeat;background-size: 25px;">G</button>
+                </div>
+            </div>   
+
+            <!-- comment button -->
+            <div style="border-color: transparent; margin-top: -68px;">
+                <input type="text" placeholder="כתוב משהו.." style="direction: rtl;border-radius: 12px; width: 200px;" id="comment"/><br/>
+                <input type="button" value="       " style="background-image: url('pictures/comment\ icon.png');background-position: center; background-size: 28px; background-repeat: no-repeat; border-color: transparent; background-color: transparent;border-radius: 100px ; margin-top: -px; margin-left:-10px; margin-left: 5px ;" onclick="showSearch();"></input>
             </div>
 
-            </div>
-            <div class="pic2">
-         
+            <!-- second result with like and link -->
+            <div class="pic2"  style="border-top-color: transparent; border-right-color: transparent; border-left-color: transparent; border-bottom-color: grey;">
                 <div id="flex-box-res4" style="margin-top: 10px;  border-color: transparent;" >
-                    <button onclick="like()" style="border-color: transparent;width: 40px ;border-radius: 30px; background-image: url('pictures/orangeLike.png');background-repeat: no-repeat;background-size: 42px; background-position: center;"></button>
+                    <button onclick="like()" style="border-color: transparent;width: 40px ;border-radius: 30px; background-image: url('pictures/pngguru.com.png');background-repeat: no-repeat;background-size: 50px; background-position: center;"></button>
                     <button class=" btn btn-success" onclick="like()" style="margin-right: 30px;  margin-left: 5px;color: transparent;border-color: transparent;width: 38px;border-radius: 100px;background-image: url('pictures/linkpic.png');background-position: center;background-repeat: no-repeat;background-size: 25px;">G</button>
-
                 </div>
-    
+            </div>
+
+            <!-- comment button -->
+            <div style="border-color: transparent; margin-top: -68px;">
+                <input type="text" placeholder="כתוב משהו.." style="direction: rtl;border-radius: 12px; width: 200px;" id="comment"/><br/>
+                <input type="button" value="       " style="background-image: url('pictures/comment\ icon.png');background-position: center; background-size: 28px; background-repeat: no-repeat; border-color: transparent; background-color: transparent;border-radius: 100px ; margin-top: -px; margin-left:-10px; margin-left: 5px ;" onclick="showSearch();"></input>
+            </div>
+
+            <!-- third result with like and link -->
+            <div class="pic3"  style="border-top-color: transparent; border-right-color: transparent; border-left-color: transparent; border-bottom-color: grey;">
+                <div id="flex-box-res5" style="margin-top: 10px;  border-color: transparent;" >
+                    <button onclick="like()" style="border-color: transparent;width: 40px ;border-radius: 30px; background-image: url('pictures/pngguru.com.png');background-repeat: no-repeat;background-size: 50px; background-position: center;"></button>
+                    <button class=" btn btn-success" onclick="like()" style=" margin-right: 30px; ;margin-left: 5px;color: transparent;border-color: transparent;width: 38px;border-radius: 100px;background-image: url('pictures/linkpic.png');background-position: center;background-repeat: no-repeat;background-size: 25px;">G</button>
                 </div>
-                <div class="pic3">
-                    <div id="flex-box-res5" style="margin-top: 10px;  border-color: transparent;" >
-                        <button onclick="like()" style="border-color: transparent;width: 40px ;border-radius: 30px; background-image: url('pictures/orangeLike.png');background-repeat: no-repeat;background-size: 42px; background-position: center;"></button>
-                        <button class=" btn btn-success" onclick="like()" style=" margin-right: 30px; ;margin-left: 5px;color: transparent;border-color: transparent;width: 38px;border-radius: 100px;background-image: url('pictures/linkpic.png');background-position: center;background-repeat: no-repeat;background-size: 25px;">G</button>
+            </div>          
 
+            <!-- comment button -->
+            <div style="border-color: transparent; margin-top: -68px;">
+                <input type="text" placeholder="כתוב משהו.." style="direction: rtl;border-radius: 12px; width: 200px;" id="comment"/><br/>
+                <input type="button" value="       " style="background-image: url('pictures/comment\ icon.png');background-position: center; background-size: 28px; background-repeat: no-repeat; border-color: transparent; background-color: transparent;border-radius: 100px ; margin-top: -px; margin-left:-10px; margin-left: 5px ;" onclick="showSearch();"></input>
+            </div>
 
-                    </div>
-        </div>
-                    </div>            <div id="flex-box-res3"  style="border-color: white;justify-content: space-around; ">
+            <div id="flex-box-res3"  style="border-color: white;justify-content: space-around; ">
                 <div style="border-color: white;height: 100px;">
-                </div>
-                <div select class="topnav" style="border-color: white;;">
-                    <form>
-                        <input type="text" placeholder="Comment.." style="border-radius: 12px; margin-left: 65px; width: 200px;" id="comment"/><br/>
-                        <input type="button" value="Comment" style="border-color: transparent;color: white;border-radius: 100px;background-color: rgb(233, 70, 70) ;margin-left: 120px; margin-top: 10px;" onclick="showSearch();"></input>
-                    </form>
-                </div>        
+                </div>       
             </div>
             
         </div>
 
-    </div>
+    <!-- </div> -->
 
     <script src="script.js"
     ></script>

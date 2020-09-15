@@ -20,7 +20,7 @@ var pages = [
   }
 dict["DFS"] = new basicSubject("DFS");
 dict["DFS"].linkArray.push(new basicLink("YouTube","Depth First Search Algorithm",20));
-dict["DFS"].linkArray.push(new basicLink("Moodle","name2",13));
+dict["DFS"].linkArray.push(new basicLink("Moodle Ben Gurion","Lecture No. 3 - DFS",13));
 dict["DFS"].linkArray.push(new basicLink("Google-Drive","Algorithms summary",7));
 
 
@@ -35,6 +35,7 @@ function showSearch(text){
 
 function searchFunc(info2){
     info=info2
+  
     let h1=document.createElement("h1")
     let h2=document.createElement("h2")
     let h3=document.createElement("h3")
@@ -63,6 +64,7 @@ function searchFunc(info2){
       h3.append(SourceName)
       h3.append(SourceUrl)
       h3.append(SourceLike)
+      
       h3.style.fontSize="25"
       }
       if(i==2){
@@ -107,11 +109,12 @@ function Clean_Show(){
       console.log(err)
       document.getElementById("flex-box-res").innerHTML = err.message;
     }
-  let text=document.createTextNode(" you are searching for "+info+", That what we found: THE ADDRESS: "+dict[info].linkArray[0].url   )
+  let text=document.createTextNode( info+" :תוצאות עבור")
   h1.setAttribute("id","myfunc")
   h2.setAttribute("id","myfunc2")
-  h2.append(+dict[info].linkArray[0].numOfLikes +" LIKES ")
+  h2.append(+dict[info].linkArray[0].numOfLikes +" LIKES ") /*should be adding 1 like to existing content*/
   h1.appendChild(text)
+  h1.style.marginLeft="600"
   document.getElementById("flex-box-res").appendChild(h1)
   document.getElementById("flex-box-res2").appendChild(h2)
 
