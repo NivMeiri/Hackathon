@@ -25,9 +25,9 @@
     background-size: 175px;
     border-color: rgb(247, 177, 47);
   }
-.pic{
-  font-size: 100px;
-}
+/* .pic .flex-box-res2{
+  font-size: 500px;
+} */
 
   .pic:after {
     content: "";
@@ -65,7 +65,7 @@
     text-align: center;
     background: rgb(247, 177, 47);
     color: lightyellow;
-    font-size: 30px;
+    font-size: 200px;
     background-image: url('pictures/big_d.jpg');
     background-repeat: no-repeat;
     background-position: left;

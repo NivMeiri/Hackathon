@@ -49,7 +49,7 @@ function searchFunc(info2){
       }
       h1.setAttribute("id","searchFunc")
       h2.setAttribute("id","myfunc2")
-    let text=document.createTextNode(" Results for : "+info )
+    let text=document.createTextNode( info+" :תוצאות עבור")
     for ( let i =0 ; i< dict[info].linkArray.length ; i++){
       let SourceName=document.createTextNode("    "+dict[info].linkArray[i].name+": " )
       let SourceUrl=document.createTextNode(dict[info].linkArray[i].url+"\n" )
@@ -58,19 +58,23 @@ function searchFunc(info2){
       h2.append(SourceUrl)
       h2.append
       h2.append(SourceLike)
+      h2.style.fontSize="25"
       if(i==1){
       h3.append(SourceName)
       h3.append(SourceUrl)
       h3.append(SourceLike)
+      h3.style.fontSize="25"
       }
       if(i==2){
         h4.append(SourceName)
         h4.append(SourceUrl)
         h4.append(SourceLike)
+        h4.style.fontSize="25"
         }
     }
 
     h1.appendChild(text)
+    h1.style.marginLeft="600"
     document.getElementById("flex-box-res").appendChild(h1)
     document.getElementById("flex-box-res2").appendChild(h2)
     document.getElementById("flex-box-res4").appendChild(h3)
