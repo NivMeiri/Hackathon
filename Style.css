@@ -1,3 +1,6 @@
+.flex-box{
+    display: none;
+}
 
 .flex-box div{
     display: flex;

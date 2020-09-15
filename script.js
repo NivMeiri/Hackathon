@@ -25,18 +25,14 @@ dict["DFS"].linkArray.push(new basicLink("Google-Drive","Algorithms summary",7))
 dict["BFS"]=[4,"BFS"]
 dict["BEST"]=[4,"BEST"]
 dict["HOFFMAN"]=[9,"HOFFMAN"]
+
 function showSearch(){
   var name =document.getElementById("Search")
   console.log(name.value);
-  //var oNewWindow = window.open("index.html", "mywindow");
- // oNewWindow.onload = function(){oNewWindow.window.searchFunc(name.value);};
-  
-
   searchFunc(name.value)
 }
 
 function searchFunc(info2){
-
 
     info=info2
     let h1=document.createElement("h1")
@@ -83,7 +79,8 @@ function searchFunc(info2){
     document.getElementById("flex-box-res2").appendChild(h2)
     document.getElementById("flex-box-res4").appendChild(h3)
     document.getElementById("flex-box-res5").appendChild(h4)
-
+    document.getElementById("flex-box").style.display='block'
+    
 
 
 }
@@ -97,8 +94,7 @@ function goto(){
 }
 function like(){
   reset()
-
-Clean_Show()
+  Clean_Show()
 }
 function Clean_Show(){
   let h2=document.createElement("h2")
@@ -111,7 +107,6 @@ function Clean_Show(){
    h2.append(SourceLike)
    h2.style.fontSize="25" 
    document.getElementById("flex-box-res2").appendChild(h2)
-
 }
 function Addtodict(){
     }
