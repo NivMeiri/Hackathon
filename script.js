@@ -19,9 +19,9 @@ var pages = [
     document.body.style.backgroundImage = "url('Big_data.jpg')";
   }
 dict["DFS"] = new basicSubject("DFS");
-dict["DFS"].linkArray.push(new basicLink("YouTube","someLink",20));
-dict["DFS"].linkArray.push(new basicLink("Moodle","someLink",13));
-dict["DFS"].linkArray.push(new basicLink("Drive","someLink2",7));
+dict["DFS"].linkArray.push(new basicLink("YouTube","Depth First Search Algorithm",20));
+dict["DFS"].linkArray.push(new basicLink("Moodle","name2",13));
+dict["DFS"].linkArray.push(new basicLink("Google-Drive","Algorithms summary",7));
 
 
 dict["BFS"]=[4,"BFS"]
@@ -51,9 +51,9 @@ function searchFunc(info2){
       h2.setAttribute("id","myfunc2")
     let text=document.createTextNode(" Results for : "+info )
     for ( let i =0 ; i< dict[info].linkArray.length ; i++){
-      let SourceName=document.createTextNode("Source: "+dict[info].linkArray[i].name+"\n" )
-      let SourceUrl=document.createTextNode("Adress: "+dict[info].linkArray[i].url+"\n" )
-      let SourceLike=document.createTextNode(": "+dict[info].linkArray[i].numOfLikes+" likes"+"\n" )
+      let SourceName=document.createTextNode("    "+dict[info].linkArray[i].name+": " )
+      let SourceUrl=document.createTextNode(dict[info].linkArray[i].url+"\n" )
+      let SourceLike=document.createTextNode(" | "+dict[info].linkArray[i].numOfLikes+" likes" )
       h2.append(SourceName)
       h2.append(SourceUrl)
       h2.append

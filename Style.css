@@ -25,7 +25,10 @@
     background-size: 175px;
     border-color: rgb(247, 177, 47);
   }
-  
+.pic{
+  font-size: 100px;
+}
+
   .pic:after {
     content: "";
     flex: 0 0 25%;
@@ -36,8 +39,6 @@
     background-image: url("pictures/DFS.png");
     background-position: left center;
   }
-
-
   .pic2:after {
     content: "";
     flex: 0 0 25%;
@@ -48,8 +49,6 @@
     background-image: url("pictures/dfs-m.png");
     background-position: left center;
   }
-
-
   .pic3:after {
     content: "";
     flex: 0 0 25%;
@@ -59,6 +58,7 @@
   .pic3:after {
     background-image: url("pictures/algo-drive.png");
     background-position: right;
+
   }
   .flex-box-res2 {
     padding: 60px;
