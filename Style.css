@@ -6,7 +6,7 @@
 }
 
 .header {
-    padding: 60px;
+    padding: 30px;
     text-align: center;
     background: rgb(247, 177, 47);
     color: lightyellow;
@@ -17,9 +17,6 @@
     background-size: 175px;
     border-color: rgb(247, 177, 47);
   }
-/* .pic .flex-box-res2{
-  font-size: 500px;
-} */
 
 
   .pic:after {

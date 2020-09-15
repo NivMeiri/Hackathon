@@ -27,7 +27,7 @@ dict["DFS"].linkArray.push(new basicLink("Google-Drive","Algorithms summary",7))
 dict["BFS"]=[4,"BFS"]
 dict["BEST"]=[4,"BEST"]
 dict["HOFFMAN"]=[9,"HOFFMAN"]
-function showSearch(text){
+function showSearch(){
   var name =document.getElementById("Search")
   console.log(name.value);
   searchFunc(name.value)
@@ -35,7 +35,6 @@ function showSearch(text){
 
 function searchFunc(info2){
     info=info2
-  
     let h1=document.createElement("h1")
     let h2=document.createElement("h2")
     let h3=document.createElement("h3")
