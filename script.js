@@ -31,9 +31,7 @@ function showSearch(){
   console.log(name.value);
   searchFunc(name.value)
 }
-
 function searchFunc(info2){
-
     info=info2
     let h1=document.createElement("h1")
     let h2=document.createElement("h2")
@@ -81,23 +79,24 @@ function searchFunc(info2){
     document.getElementById("flex-box-res5").appendChild(h4)
     document.getElementById("flex-box").style.display='block'
     
-
-
 }
 function reset(){
     document.getElementById("searchFunc").remove()
     document.getElementById("myfunc2").remove()
 
 }
-function goto(){
-  
-}
 function like(){
   reset()
   Clean_Show()
 }
 function Clean_Show(){
+  let text=document.createTextNode( "DFS"+" :תוצאות עבור")
+  let h1=document.createElement("h1")
+  h1.appendChild(text)
+  h1.style.marginLeft="600"
+  document.getElementById("flex-box-res").appendChild(h1)
   let h2=document.createElement("h2")
+  document.getElementById("flex-box-res2").appendChild(h2)
   info-"DFS"
    let SourceName=document.createTextNode("    "+dict[info].linkArray[0].name+": " )
    let SourceUrl=document.createTextNode(dict[info].linkArray[0].url+"\n" )
@@ -108,5 +107,3 @@ function Clean_Show(){
    h2.style.fontSize="25" 
    document.getElementById("flex-box-res2").appendChild(h2)
 }
-function Addtodict(){
-    }
