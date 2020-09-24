@@ -1,4 +1,11 @@
-var dict = {};
+var dict1 = {};
+var dict2 = {};
+var dict3 = {};
+var dict4 = {};
+var dict5 = {};
+var LogInDict = { "Niv": "123",
+"Hadassa": "345",
+"Guy": "678","Shiri":"666"};
 info=""
 var pages = [
     'index.html',
@@ -18,26 +25,53 @@ var pages = [
     document.body.style.backgroundColor = "#f3f3f3";
     document.body.style.backgroundImage = "url('Big_data.jpg')";
   }
-dict["DFS"] = new basicSubject("DFS");
-dict["DFS"].linkArray.push(new basicLink("YouTube","Depth First Search Algorithm",20));
-dict["DFS"].linkArray.push(new basicLink("Moodle Ben Gurion","Lecture No. 3 - DFS",13));
-dict["DFS"].linkArray.push(new basicLink("Google-Drive","Algorithms summary",7));
-dict["BFS"]=[4,"BFS"]
-dict["BEST"]=[4,"BEST"]
-dict["HOFFMAN"]=[9,"HOFFMAN"]
-
-function showSearch(){
-  var name =document.getElementById("Search")
-  console.log(name.value);
-  searchFunc(name.value)
+dict1["DFS"] = new basicSubject("DFS");
+dict1["DFS"].linkArray.push(new basicLink("YouTube","Depth First Search Algorithm",20));
+dict1["DFS"].linkArray.push(new basicLink("Moodle Ben Gurion","Lecture No. 3 - DFS",13));
+dict1["DFS"].linkArray.push(new basicLink("Google-Drive","Algorithms summary",7));
+dict2["Limit"] = new basicSubject("Limit");
+dict2["Limit"].linkArray.push(new basicLink("YouTube","Limit",1));
+dict2["Limit"].linkArray.push(new basicLink("Moodle Ben Gurion","limit",2));
+dict2["Limit"].linkArray.push(new basicLink("Google-Drive","limit",3));
+function SelectPage(num){
+  alert(num)
 }
-function searchFunc(info2){
+ 
+function GoToPage(){
+  num=document.getElementById("Course").value
+  if(num==1){window.open("C:/Users/Admin/Desktop/TEST/Hackathon/Algo.html");}
+  else if (num==2){window.open("C:/Users/Admin/Desktop/TEST/Hackathon/Calculus.html");}
+  else if (num==3){window.open("C:/Users/Admin/Desktop/TEST/Hackathon/Computunal_Models.html");}
+  else if (num==4){window.open("C:/Users/Admin/Desktop/TEST/Hackathon/Linear_Alg.html");}
+  else if (num==5){window.open("C:/Users/Admin/Desktop/TEST/Hackathon/Advanced_Prog.html");}
+}
+function check(form){
+if(!(form.userid.value in LogInDict)){alert("There is no such a username!!")}
+else{
+  if((form.userid.value in LogInDict) && LogInDict[form.userid.value]==form.psw.value){
+      window.open("C:/Users/Admin/Desktop/TEST/Hackathon/second.html")
+      }
+  else{
+      alert("the password was wrong!!!")
+      }
+  }
+}
+
+function showSearch(id_num){
+  var name =document.getElementById("Search")
+  alert("search: "+name.value+"    number: "+id_num)
+  if(id_num==1){  searchFunc(name.value,dict1)}
+  if(id_num==2){  searchFunc(name.value,dict2)}
+  if(id_num==3){  searchFunc(name.value,dict3)}
+  if(id_num==4){  searchFunc(name.value,dict4)}
+  if(id_num==5){  searchFunc(name.value,dict5)}
+}
+function searchFunc(info2,dict){
     info=info2
     let h1=document.createElement("h1")
     let h2=document.createElement("h2")
     let h3=document.createElement("h3")
     let h4=document.createElement("h3")
-
     try {
         if( dict[info]==null) throw "No Value";
       }
@@ -60,7 +94,6 @@ function searchFunc(info2){
       h3.append(SourceName)
       h3.append(SourceUrl)
       h3.append(SourceLike)
-      
       h3.style.fontSize="25"
       }
       if(i==2){
@@ -70,7 +103,6 @@ function searchFunc(info2){
         h4.style.fontSize="25"
         }
     }
-
     h1.appendChild(text)
     h1.style.marginLeft="600"
     document.getElementById("flex-box-res").appendChild(h1)
@@ -78,12 +110,10 @@ function searchFunc(info2){
     document.getElementById("flex-box-res4").appendChild(h3)
     document.getElementById("flex-box-res5").appendChild(h4)
     document.getElementById("flex-box").style.display='block'
-    
 }
 function reset(){
     document.getElementById("searchFunc").remove()
     document.getElementById("myfunc2").remove()
-
 }
 function like(){
   reset()
